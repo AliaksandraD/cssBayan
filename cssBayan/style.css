@@ -1,0 +1,125 @@
+@media screen and (max-width:1920px){
+    header {
+        display: flex;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        line-height: 1em;
+        font-size: 1.5em;
+        /* justify-content: flex-start; */
+        /* flex-direction: column; */
+        /* align-self: baseline; */
+        width: 70%;
+        /* height: 80%; */
+        margin: -.5rem auto;
+        height: 3rem;
+        background: #F9F5E7;
+    }
+    header div {
+        margin: auto 5% 2%;
+
+    }
+ 
+    .ac-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
+        height: 90%;
+        margin: 0 auto;
+        background-color: #F9F5E7;
+        padding: 0 0 5%;
+    }
+    .accordion {
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    background-color: #F9F5E7;}
+    .ac-container .ac-content {
+        /* width:  100%; */
+        margin: 0 auto;
+        height: 0;
+        background: grey;
+        box-sizing: border-box;
+        overflow: hidden;
+        font-size: 1rem;
+    }
+
+    .ac-container label {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 100;
+        /* margin: 0 0 0 0.01rem; */
+        transition: .35s;
+        /* background: linear-gradient(#EDDBC7,#F9F5E7); */
+        /* background-color: yellow; */
+        cursor: pointer;
+        color: #A7727D;
+        font-size: 1.2em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        border-top: .15em solid #EDDBC7;
+
+    }
+    
+    .ac-container label img {
+    visibility: hidden;
+    margin: 1% auto auto 90%  ;
+    /* margin: 1%; */
+    width: 1em;
+    height: 1em;
+ }
+ .ac-container:hover label {
+    color: rgb(0, 0, 0);
+ }
+ .ac-container:hover img{
+        visibility: visible;
+    }
+    /* .ac-container label:hover {
+        color: red;
+        
+    } */
+    .ac-container input {
+        display: none;
+    }
+    .ac-container input:checked + label{
+        /* background-color: green; */
+        transition: transform .35s;
+        color: #000000;
+     }
+
+
+     .ac-container input:hover + label{
+        /* background-color: green; */
+        transition: transform .35s;
+     }
+
+
+
+
+    .ac-container input:checked + label +  .ac-content{
+       height: auto;
+       transition: transform .35s;
+       /* margin: -.01rem; */
+    }
+    .ac-container input:checked + label   img{
+        transition: transform .35s;
+        transform: rotate(180deg);
+     }
+    .ac-container input:hover + label +  .ac-content{
+        height: auto;
+        transition: transform .35s;
+        
+        /* margin: -.01rem; */
+     }
+     .ac-container input:hover + label   img{
+        transition: transform .35s;
+        transform: rotate(180deg);
+     }
+
+     
+     
+}
