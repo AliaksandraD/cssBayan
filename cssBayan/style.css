@@ -99,6 +99,9 @@
         max-height: 35em;
         transition: max-height 0.35s ease-in;
     }
+    .ac-container input:checked+label+.ac-content .meme-img{
+        transform: scale(1);
+    }
 
     .ac-container input:checked+label img {
         transition: transform .35s;
@@ -109,10 +112,20 @@
         max-height: 35em;
         transition: max-height 0.35s ease-in;
     }
-    .ac-content:hover{
-        max-height: 35em;
+    label:hover + .ac-content .meme-img{
+        transform: scale(1);
+
     }
 
+
+    
+    .ac-content:hover{
+        max-height: 35em;
+        
+    }
+    .meme-img:hover {
+        transform: scale(1);
+    }
    
     input:hover+label img {
         transition: transform .35s;
@@ -123,6 +136,8 @@
     .meme-img {
         display: flex;
         justify-content: center;
+        transform: scale(.5);
+        transition: 1s;
     }
 
     .meme-img img {
@@ -130,6 +145,8 @@
         height: auto;
         margin: 1% auto 2%;
         cursor: pointer;
+        overflow: hidden;
+        
     }
 
 }
@@ -223,14 +240,16 @@
         color: #000000;
     }
 
-
     .ac-container input:hover+label {
         font-weight: 700;
     }
 
     .ac-container input:checked+label+.ac-content {
-        max-height: 35em;
+        max-height: 45em;
         transition: max-height 0.35s ease-in;
+    }
+    .ac-container input:checked+label+.ac-content .meme-img{
+        transform: scale(1);
     }
 
     .ac-container input:checked+label img {
@@ -239,13 +258,23 @@
     }
 
     label:hover + .ac-content {
-        max-height: 35em;
+        max-height: 45em;
         transition: max-height 0.35s ease-in;
     }
-    .ac-content:hover{
-        max-height: 35em;
+    label:hover + .ac-content .meme-img{
+        transform: scale(1);
+
     }
 
+
+    
+    .ac-content:hover{
+        max-height: 45em;
+        
+    }
+    .meme-img:hover {
+        transform: scale(1);
+    }
    
     input:hover+label img {
         transition: transform .35s;
@@ -256,12 +285,17 @@
     .meme-img {
         display: flex;
         justify-content: center;
+        transform: scale(.5);
+        transition: 1s;
     }
 
     .meme-img img {
-        width: 80%;
+        width: 100%;
         height: auto;
         margin: 1% auto 2%;
+        cursor: pointer;
+        overflow: hidden;
+        
     }
 
 }
@@ -284,7 +318,7 @@
     }
 
     header div {
-        margin: auto 15% 3%;
+        margin: auto 3% 3%;
     }
     .accordion {
         width: 100%;
@@ -296,7 +330,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 70%;
+        width: 95%;
         height: 100%;
         margin: 0 auto;
         background-color: #F9F5E7;
@@ -357,7 +391,6 @@
         color: #000000;
     }
 
-
     .ac-container input:hover+label {
         font-weight: 700;
     }
@@ -365,6 +398,9 @@
     .ac-container input:checked+label+.ac-content {
         max-height: 35em;
         transition: max-height 0.35s ease-in;
+    }
+    .ac-container input:checked+label+.ac-content .meme-img{
+        transform: scale(1);
     }
 
     .ac-container input:checked+label img {
@@ -376,6 +412,20 @@
         max-height: 35em;
         transition: max-height 0.35s ease-in;
     }
+    label:hover + .ac-content .meme-img{
+        transform: scale(1);
+
+    }
+
+
+    
+    .ac-content:hover{
+        max-height: 35em;
+        
+    }
+    .meme-img:hover {
+        transform: scale(1);
+    }
    
     input:hover+label img {
         transition: transform .35s;
@@ -386,12 +436,17 @@
     .meme-img {
         display: flex;
         justify-content: center;
+        transform: scale(.5);
+        transition: 1s;
     }
 
     .meme-img img {
         width: 100%;
         height: auto;
         margin: 1% auto 2%;
+        cursor: pointer;
+        overflow: hidden;
+        
     }
 
 }
